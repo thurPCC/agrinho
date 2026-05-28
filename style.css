@@ -1,139 +1,135 @@
 /* style.css */
-:root {
-    --primary-color: #2d6a4f;
-    --secondary-color: #40916c;
-    --dark-color: #1b4332;
-    --light-color: #f4f9f4;
-    --text-color: #222222;
-    --white: #ffffff;
-    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7f4;
+  color: #333;
 }
 
-body {
-    font-family: var(--font-main);
-    background-color: var(--light-color);
-    color: var(--text-color);
+/* Container */
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* Header & Navigation */
-header {
-    background-color: var(--white);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+/* Header */
+header{
+  background: linear-gradient(rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)),
+  url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80');
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+header h1{
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
+header p{
+  font-size: 1.2rem;
 }
 
-.nav-menu {
-    display: flex;
-    gap: 2rem;
+/* Navegação */
+nav{
+  background-color: #1b5e20;
+  padding: 15px 0;
 }
 
-.nav-menu a {
-    font-weight: 500;
-    transition: color 0.3s;
+nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-.nav-menu a:hover {
-    color: var(--secondary-color);
+nav a{
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(45, 106, 79, 0.8), rgba(27, 67, 50, 0.9)), url('https://picsum.photos') no-repeat center center/cover;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--white);
-    padding: 0 2rem;
-    margin-top: 60px;
+nav a:hover{
+  color: #c8e6c9;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+/* Main */
+main{
+  padding: 40px 0;
 }
 
-.hero-content p {
-    font-size: 1.25rem;
-    max-width: 600px;
-    margin: 0 auto;
+/* Cards */
+.card{
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Main Content */
-main {
-    max-width: 1200px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+.card h2{
+  color: #1b5e20;
+  margin-bottom: 20px;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    color: var(--dark-color);
-    margin-bottom: 3rem;
+/* Grid */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
-/* Grid de Aplicações */
-.grid-applications {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.box{
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
 }
 
-.card {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border-top: 5px solid var(--primary-color);
-    transition: transform 0.3s;
+.box:hover{
+  transform: translateY(-5px);
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.box h3{
+  color: #2e7d32;
+  margin-bottom: 10px;
 }
 
-.card h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
+/* Lista */
+.lista li{
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f1f8f1;
+  border-left: 5px solid #2e7d32;
+  border-radius: 5px;
 }
 
 /* Footer */
-footer {
-    background-color: var(--dark-color);
-    color: var(--white);
-    text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
+footer{
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .hero-content h1 {
-        font-size: 2rem;
-    }
+@media(max-width: 768px){
+
+  header h1{
+    font-size: 2rem;
+  }
+
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
 }

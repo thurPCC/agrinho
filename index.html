@@ -1,63 +1,87 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIG na Gestão Ambiental</title>
-    <!-- O Reset deve vir primeiro -->
-    <link rel="stylesheet" href="reset.css">
-    <!-- Estilo personalizado do site -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIG na Gestão Ambiental</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="nav-container">
-            <div class="logo">EcoSIG</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#aplicacoes">Aplicações</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Sistemas de Informação Geográfica</h1>
+      <p>Aplicações do SIG na Gestão Ambiental</p>
+    </div>
+  </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>SIG na Gestão Ambiental</h1>
-            <p>Transformando dados geográficos em soluções inteligentes para a preservação do nosso planeta.</p>
-        </div>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#aplicacoes">Aplicações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <section id="sobre" class="card">
+      <h2>O que é SIG?</h2>
+      <p>
+        Os Sistemas de Informação Geográfica (SIG) são ferramentas utilizadas
+        para coletar, armazenar, analisar e visualizar dados espaciais.
+        Na gestão ambiental, ajudam no monitoramento de áreas verdes,
+        recursos hídricos e impactos ambientais.
+      </p>
     </section>
 
-    <main id="aplicacoes">
-        <h2 class="section-title">Principais Aplicações Práticas</h2>
-        
-        <div class="grid-applications">
-            <div class="card">
-                <h3>Monitoramento de Desmatamento</h3>
-                <p>Análise de imagens de satélite em tempo real para detectar focos de desmatamento ilegal e incêndios florestais.</p>
-            </div>
+    <section id="beneficios" class="card">
+      <h2>Benefícios</h2>
 
-            <div class="card">
-                <h3>Gestão de Recursos Hídricos</h3>
-                <p>Mapeamento de bacias hidrográficas, monitoramento da qualidade da água e planejamento de redes de abastecimento.</p>
-            </div>
-
-            <div class="card">
-                <h3>Planejamento Urbano Sustentável</h3>
-                <p>Zoneamento ecológico-econômico e identificação de áreas de risco para o crescimento ordenado das cidades.</p>
-            </div>
-
-            <div class="card">
-                <h3>Análise de Impacto Ambiental (EIA/RIMA)</h3>
-                <p>Modelagem visual dos impactos ambientais de grandes obras de engenharia antes de sua execução.</p>
-            </div>
+      <div class="grid">
+        <div class="box">
+          <h3>Monitoramento</h3>
+          <p>Acompanhamento de mudanças ambientais em tempo real.</p>
         </div>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 EcoSIG - Inteligência Geográfica para a Sustentabilidade.</p>
-    </footer>
+        <div class="box">
+          <h3>Planejamento</h3>
+          <p>Auxilia no planejamento urbano e ambiental sustentável.</p>
+        </div>
+
+        <div class="box">
+          <h3>Tomada de decisão</h3>
+          <p>Fornece análises precisas para decisões estratégicas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="aplicacoes" class="card">
+      <h2>Aplicações Ambientais</h2>
+
+      <ul class="lista">
+        <li>Mapeamento de áreas de risco</li>
+        <li>Controle do desmatamento</li>
+        <li>Gestão de recursos hídricos</li>
+        <li>Monitoramento da biodiversidade</li>
+        <li>Análise de impactos ambientais</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer id="contato">
+    <div class="container">
+      <p>© 2026 - Projeto SIG e Gestão Ambiental</p>
+      <p>Email: contato@sigambiental.com</p>
+    </div>
+  </footer>
 
 </body>
 </html>
